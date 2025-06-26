@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Tasks in One</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* General Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Task 1: Navbars */
+    .nav-section {
+      background-color: #b2dfdb;
+      padding: 30px;
+    }
+    .navbar {
+      background-color: #000;
+      color: white;
+      padding: 10px 20px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .navbar .btn {
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+      padding: 5px 15px;
+    }
+    .middle-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    /* Task 2: Page Layout */
+    header {
+      background-color: #fdd835;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #1b5e20;
+      color: lightgreen;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+    }
+    .content {
+      display: flex;
+      padding: 20px;
+    }
+    .left {
+      width: 20%;
+    }
+    .left a {
+      display: block;
+      margin: 5px 0;
+      color: green;
+      text-decoration: none;
+    }
+    .main {
+      width: 80%;
+      padding-left: 30px;
+    }
+    .main p {
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: flex;
+      justify-content: space-between;
+      background-color: #c5e1a5;
+      padding: 30px;
+      margin-top: 20px;
+    }
+    .grid .column {
+      width: 30%;
+    }
+
+    /* Task 3: Social Media Cards */
+    .cards-section {
+      padding: 40px;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .card {
+      background-color: white;
+      border: 1px solid #000;
+      padding: 30px 20px;
+      text-align: center;
+      width: 250px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .card i {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+    .card h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .card p {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .twitter-card button {
+      background-color: black;
+      color: white;
+    }
+    .instagram-card {
+      background-color: #e1306c;
+      color: white;
+      border: none;
+    }
+    .instagram-card i, .instagram-card h2, .instagram-card p {
+      color: white;
+    }
+    .instagram-card button {
+      background-color: white;
+      color: #e1306c;
+    }
+    .youtube-card button {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1: Navbars -->
+  <div class="nav-section">
+    <div class="navbar">
+      <div><a href="#"><b>B W C</b></a></div>
+      <div class="middle-group">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+      </div>
+      <a class="btn" href="#">CONTACT</a>
+    </div>
+
+    <div class="navbar">
+      <div class="middle-group">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a class="btn" href="#">CONTACT</a>
+      </div>
+      <div><a href="#"><b>B W C</b></a></div>
+    </div>
+
+    <div class="navbar">
+      <div class="middle-group">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+      </div>
+      <div><a href="#"><b>B W C</b></a></div>
+      <a class="btn" href="#">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Task 2: Webpage Layout -->
+  <header>
+    <div class="logo">Cool<span style="color: green;">Logo</span></div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">FAQ</a>
+      <a href="#">Help</a>
+    </nav>
+  </header>
+
+  <div class="hero">Heading</div>
+
+  <div class="content">
+    <div class="left">
+      <h3>Left heading</h3>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+    </div>
+    <div class="main">
+      <h2>View Template Source Code</h2>
+      <p>If the facts don't fit the theory, change the facts...</p>
+      <h2>Heading</h2>
+      <p>The most important moment of your life is now...</p>
+      <p>You will not be punished for your anger...</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="column">
+      <h3>Heading</h3>
+      <p>This too, will pass.</p>
+      <h3>Heading</h3>
+      <p>The most important moment of your life is now...</p>
+    </div>
+    <div class="column">
+      <h3>Heading</h3>
+      <p>You will not be punished for your anger...</p>
+    </div>
+    <div class="column">
+      <h3>Heading</h3>
+      <p>You will not be punished for your anger...</p>
+    </div>
+  </div>
+
+  <!-- Task 3: Social Media Cards -->
+  <div class="cards-section">
+    <div class="card twitter-card">
+      <i class="fab fa-twitter"></i>
+      <h2>TWITTER</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <button>READ MORE</button>
+    </div>
+    <div class="card instagram-card">
+      <i class="fab fa-instagram"></i>
+      <h2>INSTAGRAM</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <button>READ MORE</button>
+    </div>
+    <div class="card youtube-card">
+      <i class="fab fa-youtube"></i>
+      <h2>YOUTUBE</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <button>READ MORE</button>
+    </div>
+  </div>
+
+</body>
+</html>
