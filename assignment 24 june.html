@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation Assignment</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(120deg, #e0c3fc, #8ec5fc);
+      background-size: 200% 200%;
+      animation: bgShift 10s ease infinite;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* 🎯 TASK 1: Smooth Hover Animation */
+    .hover-button {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.5s ease, transform 0.5s ease;
+      cursor: pointer;
+    }
+
+    .hover-button:hover {
+      background-color: #0056b3;
+      transform: scale(1.1);
+    }
+
+    /* 🎯 TASK 2: Rotating Gear */
+    .gear {
+      font-size: 50px;
+      display: inline-block;
+      animation: rotateGear 4s linear infinite;
+      margin-top: 30px;
+    }
+
+    @keyframes rotateGear {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* 🎯 TASK 3: Text Fade In + Slide */
+    .fade-slide-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+    }
+
+    .fade-slide {
+      opacity: 0;
+      animation: fadeInSlide 3s ease forwards;
+    }
+
+    @keyframes fadeInSlide {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* 🎁 Bonus: Background gradient animation */
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎯 TASK 1 -->
+  <section>
+    <h2>Task 1: Smooth Hover Animation</h2>
+    <button class="hover-button">Hover Me</button>
+  </section>
+
+  <!-- 🎯 TASK 2 -->
+  <section>
+    <h2>Task 2: Rotating Gear</h2>
+    <div class="gear">⚙</div>
+  </section>
+
+  <!-- 🎯 TASK 3 -->
+  <section class="fade-slide-container">
+    <h1 class="fade-slide">Welcome to CSS World</h1>
+  </section>
+
+</body>
+</html>
