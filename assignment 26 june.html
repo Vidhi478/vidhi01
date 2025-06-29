@@ -1,0 +1,205 @@
+/* Task 1: All css properties with explanation */
+<br>
+<!DOCTYPE html>
+<html>
+<head>
+  <br>
+  <p>
+
+/* 1. display → defines how element is shown: block, inline, flex, none */
+
+display: block;
+
+
+/* 2. position → sets element placement: static, relative, absolute, fixed */
+
+position: absolute;
+
+
+/* 3. top → vertical position (used with position: absolute) */
+
+top: 100%;
+
+
+/* 4. left → horizontal position */
+
+left: 0;
+
+
+/* 5. background-color → sets background color */
+
+background-color: #33688a;
+
+
+/* 6. color → sets text color */
+
+color: white;
+
+
+/* 7. padding → space inside the element */
+
+padding: 10px 15px;
+
+
+/* 8. margin → space outside the element  */
+
+margin: 0;
+
+
+/* 9. list-style → removes bullets from list */
+
+list-style: none;
+
+
+/* 10. text-decoration → removes underline or styling from text/links */
+
+text-decoration: none;
+
+
+/* 11. font-family → sets the font type */
+
+font-family: Arial, sans-serif;
+
+
+/* 12. z-index → decides which element stays on top (higher = top) */
+
+z-index: 1;
+
+
+/* 13. :hover → triggers style when user hovers over element */
+
+li:hover {
+  background-color: #1c3b52;
+}
+ </p>
+</br>
+</head>
+
+/* Task 2: simple dropdown menu  */
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exact Dropdown Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f5;
+    }
+
+    .navbar {
+      background-color: #33688a;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar > ul > li {
+      display: inline-block;
+    }
+
+    .navbar a {
+      display: block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar li:hover {
+      background-color: #234d66;
+    }
+
+    /* Main dropdown (vertical under Work) */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #33688a;
+      min-width: 160px;
+      flex-direction: column;
+    }
+
+    .dropdown li {
+      width: 100%;
+    }
+
+    .navbar li:hover > .dropdown {
+      display: flex;
+    }
+
+    .dropdown a {
+      padding: 10px 15px;
+    }
+
+    .dropdown a:hover {
+      background-color: #1c3b52;
+    }
+
+    /* Sub-dropdown (Nature, People under Photography) */
+    .sub-dropdown {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #33688a;
+      min-width: 160px;
+    }
+
+    .dropdown li:hover .sub-dropdown {
+      display: block;
+    }
+
+    /* Arrow icons */
+    .arrow-down::after {
+      content: " ▼";
+      font-size: 12px;
+    }
+
+    .arrow-right::after {
+      content: " ▶";
+      float: right;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li>
+        <a href="#" class="arrow-down">Work</a>
+        <ul class="dropdown">
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li>
+            <a href="#" class="arrow-right">Photography</a>
+            <ul class="sub-dropdown">
+              <li><a href="#">Nature</a></li>
+              <li><a href="#">People</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Writing</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
