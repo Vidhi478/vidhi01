@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bella Vista Restaurant</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { padding: 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2em; }
+    header p { margin: 5px 0; font-style: italic; }
+    nav { background: #f8f8f8; padding: 10px; }
+    nav a { margin: 0 10px; color: #333; text-decoration: none; }
+    .hero { text-align: center; padding: 20px; }
+    .hero img { width: 80%; max-width: 800px; }
+    .hero .thumbs { margin-top: 10px; }
+    .hero .thumbs img { width: 30%; margin: 0 5px; }
+    .container { width: 90%; max-width: 1000px; margin: auto; }
+    section { margin: 40px 0; }
+    section h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+    .menu-table, .drink-table, .contact-table, .hours-table { width: 100%; border-collapse: collapse; }
+    .menu-table th, .menu-table td,
+    .drink-table th, .drink-table td,
+    .contact-table th, .contact-table td,
+    .hours-table th, .hours-table td {
+      border: 1px solid #ddd; padding: 8px;
+    }
+    .menu-table th, .drink-table th { background: #f0f0f0; }
+    .photo { width: 100px; }
+    .reservation input, .reservation select, .reservation textarea { width: 100%; padding: 8px; margin: 5px 0; }
+    footer { background: #f8f8f8; padding: 20px; text-align: center; font-size: 0.9em; }
+    .social a { margin: 0 10px; color: #333; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍝 Bella Vista Restaurant</h1>
+  <p>Authentic Italian Cuisine Since 1952</p>
+  <p>123 Main Street, Little Italy | (555) 123-4567</p>
+</header>
+
+<nav class="container">
+  <a href="#about">About</a>
+  <a href="#appetizers">Appetizers</a>
+  <a href="#pasta">Pasta</a>
+  <a href="#pizza">Pizza</a>
+  <a href="#mains">Main Courses</a>
+  <a href="#desserts">Desserts</a>
+  <a href="#drinks">Beverages</a>
+  <a href="#contact">Contact & Hours</a>
+  <a href="#reservation">Reservation</a>
+</nav>
+
+<div class="hero">
+  <img src="https://imgs.search.brave.com/QK3o3aANLUYQNxGvH3BHYiPpg2WXjWNBr41xe9B7hNg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTEy/NTcyNTUxNC9waG90/by90aGUtaXQtcGxh/Y2UuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWF0WUNfVTdq/Z3dOOFhjTWM4dU9H/QkVEWkxWdldUeERH/b2tkczN1Wm90LUE9" alt="Restaurant Interior">
+  <div class="thumbs">
+    <img src="thumb1.jpg" alt="">
+    <img src="thumb2.jpg" alt="">
+    <img src="thumb3.jpg" alt="">
+  </div>
+</div>
+
+<div class="container">
+  <section id="about">
+    <h2>About Bella Vista</h2>
+    <p>Welcome to Bella Vista Restaurant, where tradition meets flavor in every dish. Our family has been serving authentic Italian cuisine for over <strong>70 years</strong>, sourcing the finest ingredients and time-honored recipes from Bologna, Italy.</p>
+    <p><em>"The finest Italian pasta outside of Italy."</em> – Food & Wine Magazine</p>
+  </section>
+
+  <section id="appetizers">
+    <h2>Appetizers</h2>
+    <table class="menu-table">
+      <tr>
+        <td><strong>Bruschetta Classica</strong><br>Fresh tomatoes, basil, garlic & toasted baguette.</td>
+        <td style="width:80px; text-align:right;">$12</td>
+      </tr>
+      <tr>
+        <td><strong>Antipasto Platter</strong><br>Selection of cured meats, cheeses, olives and vegetables.</td>
+        <td style="text-align:right;">$15</td>
+      </tr>
+      <tr>
+        <td><strong>Calamari Fritti</strong><br>Crispy fried squid with marinara sauce.</td>
+        <td style="text-align:right;">$14</td>
+      </tr>
+      <tr>
+        <td><strong>Caprese Salad</strong><br>Tomatoes, fresh mozzarella, basil & balsamic glaze.</td>
+        <td style="text-align:right;">$14</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="pasta">
+    <h2>Pasta</h2>
+    <table class="menu-table">
+      <tr><th>Dish Name</th><th>Description</th><th>Price</th><th>Spice Level</th></tr>
+      <tr><td>Spaghetti Carbonara</td><td>Pancetta, pecorino cheese, black pepper.</td><td>$18</td><td>MED</td></tr>
+      <tr><td>Penne Arrabiata</td><td>Tomato sauce with garlic and chili flakes.</td><td>$16</td><td>Hot</td></tr>
+      <tr><td>Lasagna della Casa</td><td>Layers of pasta, meat sauce, and cheese.</td><td>$20</td><td>-</td></tr>
+    </table>
+  </section>
+
+  <section id="pizza">
+    <h2>Wood-Fired Pizza</h2>
+    <h3>Traditional Pizza</h3>
+    <table class="menu-table">
+      <tr><td><strong>Margherita</strong><br>Tomato, mozzarella & basil.</td><td style="text-align:right;">$15</td></tr>
+      <tr><td><strong>Pepperoni</strong><br>Pepperoni & mozzarella.</td><td style="text-align:right;">$18</td></tr>
+    </table>
+    <h3>Specialty Pizzas</h3>
+    <table class="menu-table">
+      <tr><td><strong>Prosciutto e Funghi</strong><br>Prosciutto & mushrooms.</td><td style="text-align:right;">$19</td></tr>
+      <tr><td><strong>Quattro Formaggi</strong><br>Four-cheese blend.</td><td style="text-align:right;">$17</td></tr>
+      <tr><td><strong>Vegetariano</strong><br>Seasonal vegetables with herbs.</td><td style="text-align:right;">$17</td></tr>
+    </table>
+  </section>
+
+  <section id="mains">
+    <h2>Main Courses</h2>
+    <h3>Meat & Poultry</h3>
+    <table class="menu-table">
+      <tr><td><strong>Chicken Parmigiana</strong><br>Breaded chicken breast, tomato sauce & mozzarella.</td><td style="text-align:right;">$22</td></tr>
+      <tr><td><strong>Veal Marsala</strong><br>Veal with marsala wine sauce.</td><td style="text-align:right;">$24</td></tr>
+    </table>
+    <h3>Seafood</h3>
+    <table class="menu-table">
+      <tr><td><strong>Shrimp alla Siciliana</strong><br>Shrimp in garlic tomato sauce.</td><td style="text-align:right;">$26</td></tr>
+      <tr><td><strong>Calamari Fritti</strong><br>Fried calamari rings.</td><td style="text-align:right;">$25</td></tr>
+    </table>
+  </section>
+
+  <section id="desserts">
+    <h2>Dolci (Desserts)</h2>
+    <table class="menu-table">
+      <tr><td><strong>Classic Tiramisu</strong></td><td style="text-align:right;">$9</td></tr>
+      <tr><td><strong>Chocolate Mousse</strong><br>Rich chocolate dessert with whipped cream.</td><td style="text-align:right;">$8</td></tr>
+      <tr><td><strong>Panna Cotta</strong></td><td style="text-align:right;">$7</td></tr>
+      <tr><td><strong>Gelato Selection</strong></td><td style="text-align:right;">$6</td></tr>
+    </table>
+  </section>
+
+  <section id="drinks">
+    <h2>Beverages</h2>
+    <table class="drink-table">
+      <tr><th>Wine Selection</th><th>Glass</th><th>Bottle</th></tr>
+      <tr><td>Chianti Classico (Tuscany)</td><td>$12</td><td>$42</td></tr>
+      <tr><td>Pinot Grigio (Veneto)</td><td>$11</td><td>$38</td></tr>
+      <tr><td>Prosecco (Veneto)</td><td>$10</td><td>$36</td></tr>
+      <tr><th>Non‑Alcoholic</th><th colspan="2">Price</th></tr>
+      <tr><td>Espresso</td><td colspan="2" style="text-align:right;">$4</td></tr>
+      <tr><td>Italian Soda</td><td colspan="2" style="text-align:right;">$5</td></tr>
+      <tr><td>Sparkling Water</td><td colspan="2" style="text-align:right;">$4</td></tr>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Hours</h2>
+    <table class="contact-table">
+      <tr><td><strong>Address:</strong></td><td>123 Main Street, Little Italy</td></tr>
+      <tr><td><strong>Phone:</strong></td><td>(555) 123-4567</td></tr>
+    </table>
+    <table class="hours-table">
+      <tr><th>Day</th><th>Lunch</th><th>Dinner</th></tr>
+      <tr><td>Mon–Thu</td><td>11 AM–3 PM</td><td>5 PM–10 PM</td></tr>
+      <tr><td>Fri–Sat</td><td>11 AM–3 PM</td><td>5 PM–11 PM</td></tr>
+      <tr><td>Sunday</td><td>12 PM–4 PM</td><td>5 PM–9 PM</td></tr>
+    </table>
+  </section>
+
+  <section id="reservation">
+    <h2>Make a Reservation</h2>
+    <form class="reservation">
+      <label>Name</label><input type="text" placeholder="Your Name">
+      <label>Email</label><input type="email" placeholder="you@example.com">
+      <label>Phone</label><input type="tel" placeholder="(555) 123-4567">
+      <label>Date</label><input type="date">
+      <label>Time</label><input type="time">
+      <label>Guests</label><select><option>1</option><option>2</option><option>3</option><option>4+</option></select>
+      <label>Special Occasion</label><br>
+      <input type="checkbox" id="occasion1"><label for="occasion1">Birthday</label>
+      <input type="checkbox" id="occasion2"><label for="occasion2">Anniversary</label>
+      <label>Dietary Preferences / Allergies</label><br>
+      <input type="checkbox" id="veg"><label for="veg">Vegetarian</label>
+      <input type="checkbox" id="gf"><label for="gf">Gluten‑Free</label>
+      <label>Comments</label><textarea placeholder="Any special requests"></textarea>
+      <br><button type="submit">Make Reservation</button> <button type="reset">Clear Form</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  <div class="social">
+    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+  </div>
+  <p>&copy; 2025 Bella Vista Restaurant. All rights reserved.</p>
+  <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
